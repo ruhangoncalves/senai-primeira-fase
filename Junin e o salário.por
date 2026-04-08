@@ -3,6 +3,7 @@ programa {
  //variáveis
  real salarioMensal
  real diasTrabalhados, salarioDiario
+ real salarioSemanal
 
  //lendo dados
  escreva("Valor do salário mensal: ")
@@ -12,9 +13,10 @@ programa {
 
  //cálculos
  salarioDiario = salarioMensal / diasTrabalhados
+ salarioSemanal = salarioDiario * 5
 
- //apresentando dados
+ //resultado
  escreva("Valor do salário diário: " + salarioDiario)
- leia(salarioDiario)
+ escreva("\nValor do salário semanal: " + salarioSemanal)
   }
 }
