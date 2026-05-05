@@ -1,21 +1,23 @@
 body{
- background-color: rgba(90, 90, 19, 0.756);
- color:rgba(235, 216, 167, 0.937);
+ background-color: rgba(196, 154, 106, 0.788);
+ color:rgba(32, 32, 30, 0.937);
 }
 
 output {
     color: rgba(26, 26, 26, 0.937);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
-    background-color: darkkhaki;
+    background-color: rgb(192, 153, 122);
 }
 
 button {
-    background-color: rgb(133, 108, 40);
-    color:hwb(49 0% 1% / 0.937);
-    padding: 10px;
-    border-radius: #a19090;
+    background-color: rgb(160, 110, 17);
+    color:hwb(60 99% 0% / 0.937);
+    padding: 12px;
+    border-radius: #b6a9a9;
     border:rgb(133, 108, 40);
     margin: 15px;
+    font-size: larger;
     
 }
+
