@@ -1,23 +1,38 @@
 body{
- background-color: rgba(196, 154, 106, 0.788);
- color:rgba(32, 32, 30, 0.937);
+    
+.caixa-destaque{
+        background-color: rgb(255, 255, 255);
+        color:rgb(60, 96, 167);
+        border-radius: 20px;
+        padding-inline: 30px;
+    }
+ background-color: rgba(34, 34, 34);
+ color:rgb(255, 255, 255);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-style: oblique;
+ font-size: medium;
+ 
 }
-
 output {
-    color: rgba(26, 26, 26, 0.937);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    background-color: rgb(192, 153, 122);
-}
 
+    color: rgba(14, 17, 17);
+    font-style: oblique;
+    border-radius: 25px;
+    font-family: Verdana;
+    font-size: medium;
+    background-color: rgb(255, 255, 255);
+    padding-inline-start: 10px;
+    scroll-padding-inline-end: 10px;
+}
 button {
-    background-color: rgb(160, 110, 17);
-    color:hwb(60 99% 0% / 0.937);
-    padding: 12px;
-    border-radius: #b6a9a9;
-    border:rgb(133, 108, 40);
-    margin: 15px;
-    font-size: larger;
+    background-color: rgb(255, 158, 0);
+    color:rgba(255, 255, 252, 0.937);
+    padding: 10px;
+    border:rgb(255, 72, 0);
+    border-style:outset;
+    border-radius: 25px;
+    margin: 8px;
+    font-size: medium;
+    cursor: pointer;
     
 }
-

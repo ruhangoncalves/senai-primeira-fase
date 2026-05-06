@@ -1,4 +1,43 @@
 let resultado = document.getElementById("resultado")
+
+function calcularParImpar(){
+    //informações
+    let n  = Number(prompt("Digite o número aí jovem: "))
+    //entrada
+    //processamento
+    if(n%2 == 0 )
+    {alert("Par")}
+    else
+    {alert("Ímpar")}
+    //saídas
+}
+//========================================================================
+function mostrarDiaDaSemana(){
+    //informações
+    let numero, dia 
+    //entrada
+    numero = Number(prompt("Digite o número: "))
+    //processamento
+    if(numero == 1)
+    {dia = "Domingo"}
+    else if(numero == 2)
+    {dia = "Segunda"}
+    else if(numero == 3)
+    {dia = "Terça"}
+    else if(numero == 4)
+    {dia = "Quarta"}
+    else if(numero == 5)
+    {dia = "Quinta"}
+    else if(numero == 6)
+    {dia = "Sexta"}
+    else if(numero == 7)
+    {dia = "Sábado"}
+    else
+    { dia = "Erro #404, dia não encontrado."}
+    //saídas
+resultado.innerHTML = 'Dia escolhido: ' + dia 
+}
+//========================================================================
 function adivinharNumero(){
     // let numero = Math.round(Math.random()*10)// 0..10
     // let numero = Math.floor(Math.random()*10) // 0..9
@@ -79,9 +118,9 @@ idadeCachorro = Number(prompt("Digite a idade do Cachorro"))
 idadeHumano = (idadeCachorro * 7)
 //saídas
 console.log("A idade do seu cachorro em idade humana é: " + idadeHumano)
-document.getElementById("idadeCachorro").innerHTML = "A idade do seu cachorro em idade humana é: " + idadeHumano
+resultado.innerHTML = "A idade do seu cachorro em idade humana é: " + idadeHumano
    if (idadeCachorro>= 65)
-    {resultado.innerHTML = "Seu cachorro pode se aposentar"}
+    {resultado.innerHTML += "<br>Seu cachorro pode se aposentar"}
     else
-    {resultado.innerHTML = "Seu cachorro ainda é jovem"}     
+    {resultado.innerHTML += "<br>Seu cachorro ainda é jovem"}     
 }
