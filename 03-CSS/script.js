@@ -1,5 +1,55 @@
 let resultado = document.getElementById("resultado")
 
+function cltEpj(){
+    //informações
+    let clt, estagiarios, pj, totalEsperado
+    //entrada
+    clt = Number(prompt("Número de Clts: "))
+    estagiarios = Number(prompt("Número de estagiários: "))
+    pj = Number(prompt("Número de PJs: "))
+    //processamento
+    totalEsperado = clt + estagiarios + pj
+    //saída
+    console.log("Total de Devs na empresa: " + totalEsperado)
+    if(clt >= totalEsperado*0.50){
+        resultado.innerHTML += "<br>" + "Total de Devs " + totalEsperado
+    }else{resultado.innerHTML +="<br>" + ""
+
+    }
+
+
+}
+//========================================================================
+function verificarMeta(){
+//informações
+let totalBruto, premiacoes, presentes, comissoes, lucro
+let meta 
+//entrada
+totalBruto = Number(prompt("Total Bruto: "))
+premiacoes = Number(prompt("Premiações: "))
+presentes = Number(prompt("Presentes: "))
+comissoes = Number(prompt("Comissões: "))
+meta = Number(prompt("Meta diária: "))
+//processamento
+lucro = totalBruto - premiacoes - presentes - comissoes
+let mensagem = ''
+//saída
+console.log("Lucro do dia: R$ " + lucro.toFixed(2))
+resultado.innerHTML = "Lucro de Hoje: R$" + lucro.toFixed(2).replace('.',',')
+ //meta batida
+if(lucro >= meta){mensagem = "Batemos a meta, lucro de R$" + lucro.toFixed(2).replace('.',',')}
+ //sem meta mas com lucro 
+else if(lucro > 0)
+{mensagem = "Não batemos a meta mas o lucro foi de R$" + lucro.toFixed(2).replace('.',',')}
+ //sem meta e prejuízo  
+else
+{let prejuizo = lucro * -1
+mensagem = "Hoje foi só preju " + prejuizo.toFixed(2).replace('.',',')
+}
+console.log(mensagem);
+resultado.innerHTML += '<br>'+mensagem
+}
+//========================================================================
 function calcularParImpar(){
     //informações
     let n  = Number(prompt("Digite o número aí jovem: "))
@@ -119,8 +169,8 @@ idadeHumano = (idadeCachorro * 7)
 //saídas
 console.log("A idade do seu cachorro em idade humana é: " + idadeHumano)
 resultado.innerHTML = "A idade do seu cachorro em idade humana é: " + idadeHumano
-   if (idadeCachorro>= 65)
-    {resultado.innerHTML += "<br>Seu cachorro pode se aposentar"}
-    else
-    {resultado.innerHTML += "<br>Seu cachorro ainda é jovem"}     
+   if (idadeCachorro>= 65){
+    resultado.innerHTML += "<br>Seu cachorro pode se aposentar"
+    }else{
+    resultado.innerHTML += "<br>Seu cachorro ainda é jovem"}     
 }
