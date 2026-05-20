@@ -47,11 +47,6 @@ function zerarContagem(){
 }
 
 
-
-
-
-
-
 let global = 'Eu sou uma variável global :/'
 function funcao1(){
     let local = 'Sou uma variável local :D'
@@ -67,3 +62,10 @@ function funcao2(){
 
 // funcao1()
 // funcao2()
+
+let totalAcumulado = 0
+const displayTotal = document.getElementById('total-placar');
+const displayMsg = document.getElementById('status-msg');
+const listaHistorico = document.getElementById('lista-historico');
+const btnReset = document.getElementById('btn-reset');
+const botoesDados = document.querySelectorAll('.btn-dado')
