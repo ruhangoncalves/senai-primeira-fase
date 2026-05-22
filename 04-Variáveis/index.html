@@ -7,9 +7,11 @@
     <title>var</title>
 </head>
 <body>
-    <h1>variaveis</h1>
-
+    <h1>V A R I Á V E I S </h1>
     <hr>
+
+
+
     <h2>Vendas na Harry Ploter</h2>
     <p id="totalVendido">Total de vendas: R$0,00</p>
     Valor da venda R$
@@ -20,22 +22,152 @@
 
 
 
-    <h2>Emmet vs Code</h2>
-    <button onclick="incrementarContagem()">+</button>
-    <button onclick="somar10()">+10</button>
-    <button onclick="somar2()">+2</button>
-    <p id="p-contagem">
-        0
-    </p>
-    <button onclick="decrementarContagem()">-</button>
-    <button onclick="zerarContagem()">0</button>
+    <h2>Bilu e o Contador de Páginas</h2>
+
+        <div class="botoes">
+            <button onclick="alterarContador(1)">+</button>
+            <button onclick="alterarContador(2)">+2</button>
+            <button onclick="alterarContador(10)">+10</button>
+        </div>
+
+        <div class="tela">
+            <span id="visor">0</span>
+        </div>
+
+        <div class="botoes">
+            <button onclick="alterarContador(-1)">-</button>
+            <button onclick="zerarContador()">0</button>
+        </div>
+    </div>
     <hr>
+
+
+
+<div class="container">
+        <h2>Dona Bete e a Rolagem de Dados</h2>
+
+        <div class="painel">
+            <p>Resultado do Dado: <strong id="resultadoDado">0</strong></p>
+            <p>Total Acumulado: <strong id="totalAcumulado">0</strong></p>
+        </div>
+
+        <div class="botoes-dados">
+            <button onclick="rolarDado(4)">D4</button>
+            <button onclick="rolarDado(6)">D6</button>
+            <button onclick="rolarDado(8)">D8</button>
+            <button onclick="rolarDado(10)">D10</button>
+            <button onclick="rolarDado(12)">D12</button>
+            <button onclick="rolarDado(20)">D20</button>
+        </div>
+
+        <button class="btn-zerar" onclick="zerarTotal()">Zerar Tudo</button>
+
+        <div class="bonus-container">
+            <div class="bonus-secao">
+                <h3>Contagem por Dado</h3>
+                <ul id="listaContagem">
+                    </ul>
+            </div>
+
+            <div class="bonus-secao">
+                <h3>Histórico de Rolagens</h3>
+                <ul id="listaHistorico">
+                    </ul>
+            </div>
+        </div>
+    </div>
+<hr>
+
+
+
+<div class="container">
+        <h2>🦖 Dona Bete e o Jogo do Dino 🦕</h2>
+        
+        <div class="aposta-box">
+            <label for="valorAposta">Valor da aposta: R$</label>
+            <input type="number" id="valorAposta" min="1" placeholder="Ex: 10">
+        </div>
+
+        <div class="dino-grid">
+            <button onclick="jogar('Espinossauro')">Espinossauro</button>
+            <button onclick="jogar('T-Rex')">T-Rex</button>
+            <button onclick="jogar('Braquiossauro')">Braquiossauro</button>
+            <button onclick="jogar('Velocirraptor')">Velocirraptor</button>
+            <button onclick="jogar('Estegossauro')">Estegossauro</button>
+            <button onclick="jogar('Triceratopo')">Triceratopo</button>
+            <button onclick="jogar('Anquilossauro')">Anquilossauro</button>
+            <button onclick="jogar('Parassaurolofo')">Parassaurolofo</button>
+            <button onclick="jogar('Alossauro')">Alossauro</button>
+            <button onclick="jogar('Carnotauro')">Carnotauro</button>
+        </div>
+
+        <div class="resultado-box">
+            <h3 class="titulo-resultado">!! RESULTADO !!</h3>
+            <p>Seu dino: <span id="txtSeuDino">-</span></p>
+            <p>Dino sorteado: <span id="txtDinoSorteado">-</span></p>
+            <p id="mensagemFinal"></p>
+        </div>
+        
+        <div class="auditoria">
+            <p>Caixa da Banca: R$ <span id="txtCaixa">0.00</span></p>
+        </div>
+    </div>
+    <hr>
+
+
+
+    <div class="container">
+        <h2>🔧 Oficina Desamassandro</h2>
+        
+        <div class="painel-entrada">
+            <div class="campo">
+                <label for="valorServico">Valor do Serviço (R$):</label>
+                <input type="number" id="valorServico" placeholder="Ex: 500" min="1">
+            </div>
+
+            <div class="campo">
+                <label for="tipoCliente">Origem do Cliente:</label>
+                <select id="tipoCliente">
+                    <option value="normal">Cliente Direto (Balcão)</option>
+                    <option value="celso">Indicação do Seu Celso</option>
+                    <option value="seguradora">Seguradora</option>
+                </select>
+            </div>
+
+            <button onclick="registrarPagamento()">Registrar Pagamento</button>
+        </div>
+
+        <div class="dashboard">
+            <div class="card bruto">
+                <p>Total Geral Recebido</p>
+                <h3 id="txtTotalRecebido">R$ 0.00</h3>
+            </div>
+            
+            <div class="card sandro">
+                <p>Faturamento Sandro (Líquido)</p>
+                <h3 id="txtSandro">R$ 0.00</h3>
+            </div>
+
+            <div class="card celso">
+                <p>Repasse Seu Celso (10%)</p>
+                <h3 id="txtCelso">R$ 0.00</h3>
+            </div>
+
+            <div class="card seguradora">
+                <p>Total Seguradoras</p>
+                <h3 id="txtSeguradora">R$ 0.00</h3>
+            </div>
+        </div>
+
+        <div class="info-extra">
+            <p>Clientes atendidos (Balcão/Indicação): <strong id="txtContador">0</strong></p>
+            <p id="mensagemDesconto"></p>
+        </div>
+    </div>
+    <hr>
+
+
     
-    <h2>Dados Dona Bete</h2> 
-    <button class="btn-dado" dado4faces="4">Dado</button>
-
-
-
     <script src="script.js"></script>
 
 </body>

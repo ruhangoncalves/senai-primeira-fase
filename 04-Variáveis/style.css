@@ -1,3 +1,25 @@
 body{
-    background-color: darkolivegreen;
+    background-color: rgb(54, 54, 54);
 }
+
+h1 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-shadow:darkslategray;
+}
+
+h2{
+    color:aliceblue;
+    font-family:monospace
+}
+hr {
+   border: none;
+   height: 4px;
+   background: linear-gradient(to right, #88ee4d, #4478da);
+
+}    
+p {
+    font-family: verdana;
+    font-size: 15px;
+    color:coral
+    }
